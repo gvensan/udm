@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_tasks</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="All-customer_FPOC-view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-48.000000, -232.000000)">
+        <g id="LeftNav_receivables">
+            <g id="Group-12" transform="translate(1.000000, 215.000000)">
+                <g id="Group-16" transform="translate(22.000000, 13.000000)">
+                    <g id="ic_tasks" transform="translate(22.000000, 0.000000)">
+                        <g>
+                            <polygon id="Bounds" fill-opacity="0.1" fill="#FF0000" opacity="0" points="0 0 24 0 24 24 0 24"></polygon>
+                            <g id="inbox" transform="translate(4.000000, 5.000000)" stroke="#2E3B42" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline id="Shape" points="16 7 11.2 7 9.6 9 6.4 9 4.8 7 0 7"></polyline>
+                                <path d="M2.776,0.966875353 L0,7.31250017 L0,11.375 C0,12.2724627 0.7163444,13 1.6,13 L14.4,13 C15.2836556,13 16,12.2724627 16,11.375 L16,7.31250017 L13.224,0.966875353 C12.9674645,0.378678492 12.3934211,-0.000439141052 11.76,3.81754851e-07 L4.24,3.81754851e-07 C3.60657888,-0.000439141052 3.03253546,0.378678492 2.776,0.966875353 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

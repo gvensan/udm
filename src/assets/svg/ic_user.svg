@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="83px" viewBox="0 0 83 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_profile_placeholder_mob</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.0%" y="-0.7%" width="105.6%" height="102.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="0_mob_Ham_nav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-94.000000, -104.000000)">
+        <g id="Hamburger" filter="url(#filter-1)" transform="translate(0.000000, 65.000000)" fill="#DDDDDD" fill-rule="nonzero">
+            <path d="M176.18925,56.952 C174.38825,47.28 166.79525,39.887 157.30825,38.083 C150.09725,36.664 142.78825,36 135.67425,36 C128.36725,36 121.06025,36.664 113.85125,38.083 C104.17225,39.887 96.86725,47.375 95.06325,56.856 C92.31225,71.266 92.31225,85.961 95.06325,100.277 C96.86725,110.044 104.36125,117.344 113.85125,119.145 C121.06025,120.662 128.36825,121.326 135.67425,121.326 C142.98025,121.326 150.19025,120.662 157.40225,119.241 C167.08225,117.345 174.38825,109.948 176.18925,100.374 C179.03625,85.962 179.03625,71.267 176.18925,56.952 Z M135.54725,56.567 C141.08425,56.567 145.57425,61.803 145.57425,68.264 C145.57425,74.725 141.08425,79.963 135.54725,79.963 C130.00825,79.963 125.51825,74.725 125.51825,68.264 C125.51825,61.803 130.00825,56.567 135.54725,56.567 Z M155.06025,100.759 L116.264207,100.759 L116.26425,93.556 C116.26425,93.556 116.25625,92.626 116.45925,92.171 C116.71325,91.612 116.96525,91.409 117.31425,91.165 C119.88025,89.376 127.10325,85.274 135.58525,85.224 L135.58525,85.22 C135.61025,85.22 135.63425,85.222 135.66125,85.222 C135.68625,85.222 135.71225,85.22 135.73725,85.22 L135.73725,85.224 C144.21725,85.275 151.44025,89.376 154.00825,91.165 C154.35825,91.409 154.61025,91.612 154.86225,92.171 C155.06925,92.626 155.05925,93.556 155.05925,93.556 L155.05925,100.759 L155.06025,100.759 Z" id="ic_profile_placeholder_mob"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_reports</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="0-Report-Dashboard-Home" transform="translate(-49.000000, -314.000000)" stroke="#2E3B42">
+            <g id="Group-16" transform="translate(32.000000, 311.000000)">
+                <g id="ic_reports" transform="translate(13.000000, 0.000000)">
+                    <g id="pie-chart" transform="translate(4.000000, 4.000000)">
+                        <path d="M15.3980952,10.5828571 C14.064647,13.7362918 10.7914847,15.6129855 7.39639819,15.1706939 C4.00131166,14.7284023 1.31820401,12.0757615 0.837171098,8.68594705 C0.356138189,5.29613264 2.19533161,2.0017529 5.33333333,0.632380952" id="Shape"></path>
+                        <path d="M16,7.61904762 C16,5.59835055 15.1972812,3.66041598 13.7684326,2.23156738 C12.339584,0.802718784 10.4016494,1.69176842e-16 8.38095238,0 L8.38095238,7.61904762 L16,7.61904762 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

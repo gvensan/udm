@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="38px" viewBox="0 0 29 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_import</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.4-Onboarding" transform="translate(-141.000000, -128.000000)">
+            <g id="Group-3" transform="translate(86.000000, 89.000000)">
+                <g id="Group-20">
+                    <g id="Group-11" transform="translate(50.000000, 38.000000)">
+                        <g id="ic_import">
+                            <rect id="Rectangle-12" fill-opacity="0.38060462" fill="#F54B5E" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                            <g id="Group" transform="translate(6.000000, 2.000000)" stroke="#00235f" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline id="Shape" points="11.6245878 31.3043478 0 31.3043478 0 7.6004384 5.13840178 3.13043478 20.3478261 3.13043478 20.3478261 19.681091"></polyline>
+                                <polyline id="Shape" points="7.82608696 0 23.4782609 0 23.4782609 18.7826087"></polyline>
+                                <path d="M3.91304348,10.173913 L17.2173913,10.173913" id="Shape"></path>
+                                <path d="M3.91304348,13.3043478 L17.2173913,13.3043478" id="Shape"></path>
+                                <path d="M3.91304348,16.4347826 L17.2173913,16.4347826" id="Shape"></path>
+                                <path d="M3.91304348,19.5652174 L13.3043478,19.5652174" id="Shape"></path>
+                                <path d="M3.91304348,22.6956522 L10.9565217,22.6956522" id="Shape"></path>
+                                <g transform="translate(10.956522, 19.565217)">
+                                    <g transform="translate(8.135452, 7.720736) scale(1, -1) translate(-8.135452, -7.720736) translate(4.635452, 3.220736)" id="Shape">
+                                        <path d="M3.65909504,8.46261263 L3.65909504,0.736464793"></path>
+                                        <polyline points="0.38516388 3.59711037 3.56339799 0.418454849 6.74205351 3.59711037"></polyline>
+                                    </g>
+                                    <circle id="Oval" cx="8.2173913" cy="8.2173913" r="8.2173913"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

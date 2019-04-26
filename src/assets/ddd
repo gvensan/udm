@@ -1,0 +1,36 @@
+export const root = {
+  // button background color
+  buttonBackground: '#fff',            
+  // button text color
+  buttonColor: '#00235f',              
+  // button border color
+  buttonBorderColor: '#26c3ed',         
+
+  // stage indicator bubble background
+  stageBubbleBackground: '#26c3ed',
+  // stage indicator bubble text color
+  stageBubbleColor: 'white',
+
+  // checkbox icon fill color
+  switchStyleFillColor: '#00235f',
+
+  // regular button border color
+  regularButtonColor: '#26c3ed',
+  // regular button border color
+  regularButtonBorder: '#26c3ed',
+
+  // regular button border color
+  actedButtonColor: '#f9ba00',  
+  // regular button border color
+  actedButtonBorder: '#f9ba00',
+
+  // tab container background
+  tabItemContainerBackground: '#00235fdd',
+  // tab bar background
+  tabBarBackgounnd: '#f9ba00',
+
+  // spinner background color
+  spinnerBackground: '#00235f',
+  // spinner background color
+  spinnerColor: '#00235f',
+}

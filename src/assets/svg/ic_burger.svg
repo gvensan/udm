@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_burger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nu-UI-web-kit" transform="translate(-4588.000000, -1419.000000)">
+            <g id="Group-10" transform="translate(4587.000000, 1235.000000)">
+                <g id="Group-9" transform="translate(0.000000, 58.000000)">
+                    <g id="ic_burger" transform="translate(0.000000, 121.000000)">
+                        <rect id="Rectangle" fill="#F7D4D4" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <g id="Icon-:-Burger" transform="translate(2.000000, 6.000000)" stroke="#2E3B42" stroke-width="2" stroke-linecap="round">
+                            <path d="M0,0 L20,0" id="Stroke-7"></path>
+                            <path d="M0,6 L20,6" id="Stroke-9"></path>
+                            <path d="M0,12 L20,12" id="Stroke-11"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

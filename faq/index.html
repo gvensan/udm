@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="/faq/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="/faq/css/style.css"> <!-- Resource style -->
+	<script src="/faq/js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+<body>
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+		<li><a class="selected" href="#basics">Basics</a></li>
+		<li><a href="#design">Design</a></li>
+		<li><a href="#stage1">Design - Mapper (Stage I)</a></li>
+		<li><a href="#stage2">Design - Source Validation Rules (Stage II)</a></li>
+		<li><a href="#stage3">Design - Target Validation Rules (Stage III)</a></li>
+		<li><a href="#stage3">Design - Mapping Rules (Stage IV)</a></li>
+		<li><a href="#payments">Repository</a></li>
+		<li><a href="#payments">Upload</a></li>
+		<li><a href="#privacy">Jobs</a></li>
+		<li><a href="#delivery">Help</a></li>
+	</ul> <!-- cd-faq-categories -->
+
+	<div class="cd-faq-items">
+		<ul id="basics" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Basics</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I sign up?</a>
+				<div class="cd-faq-content">
+					<p>All you need to do is to provide a valid email address and a password. Your account will be ready, however, it will remain in UNVERIFIED status. The registered account must be verified by clicking on the activation link sent via email to the registered email address, without which your access to the data mapper app is blocked. </p><br/>
+					<p>Sometimes, the activation email might end up in the spam folder - please check the spam folder for the activation email.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why do I have to sign up?</a>
+				<div class="cd-faq-content">
+					<p>Every registered user would be able to maintain his/her own maps (private) catering to a set of source and target files along with the mapping and transformation rules governing the mapping process. These maps would be treated as private resources. The same applies to jobs created by the user, they are treated as private jobs.</p> <br/>
+					<p>However, one can choose to share a map enabling access to other registered users who can clone a copy to their private workspace and use it as needed</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I create multiple accounts?</a>
+				<div class="cd-faq-content">
+					<p>Sure, as long as each account is associated with a distinct email address.</p><br/>
+					<p>TIP: If you are using google hosted email or Gmail account, an alias created with a suffix of + sign and a keyword would qualify for a distinct email id </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is a map?</a>
+				<div class="cd-faq-content">
+					<p>A map is an artifact that you create for transforming a source file in a specific format to a target file format. The process involves defining attribute definition of source and target files at sheet level and a mapping construct that defines rules of attribute mapping between the source and target at sheet level. </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I make changes to an existing map (Edit)?</a>
+				<div class="cd-faq-content">
+					<p>Sure, once the map is created it is identified with a unique id. Any changes via the edit map facility will update the associated map on the repository.</p><br/>
+					<p>However, be aware that any existing job that refers to the map will now inherit the changes automatically.</p><br/>
+					<p>TIP: If you want to maintain versions of the map, you can clone the existing map and create a new map and impart changes on the cloned map</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are mapping rules?</a>
+				<div class="cd-faq-content">
+					<p>A map contains a collection of rules around attribute mapping and transformation. They can be classified as:</p><br/>
+					<p>1) Source Validation Rules<p>
+					<p>&nbsp;&nbsp;Applied as a pre-processor validating the source data before applying mapping rules. Any violation would halt the mapping process with appropriate error conditions</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;a) Attribute data type definition (String, Date or Number)</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;b) Attribute constraints (unique, required) </p>
+					<p>2) Target Validation Rules</p>
+					<p>&nbsp;&nbsp;Applied as a post-processor validating the mapped result. Any violation would halt the mapping process with appropriate error conditions</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;a) Attribute data type definition (String, Date or Number) </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;b) Attribute constraints (unique, required) </p>
+					<p>3) Mapping Rules </p><br/>
+					<p>&nbsp;&nbsp;Mapping rules that identify a source attribute to be mapped to a target attribute. The mapping can be a simple copy mapping or transformations involving computation or processing</p>
+					<p>4) Map & Transform Rules</p><br/>
+					<p>&nbsp;&nbsp;Governs the transformation process involving computation, aggregation or other forms pre-processing on the source attribute before assigning to a target attribute </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is a job?</a>
+				<div class="cd-faq-content">
+					<p>An attempt to map a source file to a target file using the rules defined in a map. In other words, execution of a map by providing an input file that conforms to the source file format and attributes definition as defined in the map.</p></br>
+					<p>A created job can be executed any number of times, each time it looks up the current definition of the referred map and produces an output file.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I make changes to an existing job?</a>
+				<div class="cd-faq-content">
+					<p>No. A job once created cannot be modified, but can be executed any time (again).</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I remove a job?</a>
+				<div class="cd-faq-content">
+					<p>Yes. A job that is created and owned by you can be deleted at any time. A deletion would remove all associated resources.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="stage0" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Design - Mapper (Stage I)</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What do I need to create a map?</a>
+				<div class="cd-faq-content">
+					<p>A map need to be identified with the following:</p><br/>
+					<p>&nbsp;&nbsp;a) A unique map name </p>
+					<p>&nbsp;&nbsp;b) A source excel file </p>
+					<p>&nbsp;&nbsp;c) A target excel file </p>
+					<p>&nbsp;&nbsp;d) Basic processing considerations </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;i) A row number where the headers are expected to be found on the source excel file </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;ii) Should the source and target format is same, a flag to indicate the reuse of source file requirement </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;iii) Should the mapping process need to evaluate and consider commonality and differences with the last processed source file, a flag to indicate the diff processing requirement </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the stages in designing a map?</a>
+				<div class="cd-faq-content">
+					<p>On the Data Mapper app, designing a map involves four stages:</p> <br/>
+					<p>&nbsp;&nbsp;1) Map specification - Defining name and map settings</p>
+					<p>&nbsp;&nbsp;2) Source Validation Rules - Defining source attribute definition and constraints </p>
+					<p>&nbsp;&nbsp;3) Target Validation Rules - Defining target attribute definition and constraints </p>
+					<p>&nbsp;&nbsp;4) Mapping Rules - Defining rules for mapping a source attribute to a target attribute </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul>
+
+		<ul id="stage1" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Design - Source Validation Rules (Stage II)</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">My source excel has multiple sheets</a>
+				<div class="cd-faq-content">
+					<p>Sure, all the sheets of the source excel will be presented for selection/processing on individual tabs. You just need to identify the sheets that contain data to be used in the mapping process. Any sheet that is not considered can be marked as ignored by checking the 'Ignore Sheet' flag on the top of the sheet.</p></br/>
+					<p>Sheets marked as ignored will not be presented in source sheets list on the mapping rules definition page. It is just a convenience to keep the interaction focused.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What happens if I mark a sheet as 'Ignore'?</a>
+				<div class="cd-faq-content">
+					<p>The sheets that are marked as ignored will not be presented for mapping when you build mapping rules.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are preprocessors?</a>
+				<div class="cd-faq-content">
+					<p>A preprocessor is a set of rules to be applied on the data from the specific sheet and passed as input for the mapping process. Some rules aid in skipping rows based on conditions and some helps you to massage specific attributes on each row.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How many preprocessors can I define on a sheet?</a>
+				<div class="cd-faq-content">
+					<p>No restrictions; you can have as many rules as required to accomplish the goal. The rules will be evaluated sequentially in the order they are defined with output of a rule evaluation passed as input to the next rule processing. This can be viewed as a pipeline for rules execution until the last rule is evaluated, resulting in the final dataset that will be exposed to mapping process.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the preprocessors available?</a>
+				<div class="cd-faq-content">
+					<p>Preprocessors on the source validation can be categorized as follows:</p><br/>
+					<p>&nbsp;&nbsp;1) Duplicate processing (deduplication)</p>
+					<p>&nbsp;&nbsp;2) Skip rows</p>
+					<p>&nbsp;&nbsp;3) Date range adjustment</p>
+					<p>&nbsp;&nbsp;4) Empty value</p>
+					<p>&nbsp;&nbsp;5) Case conversion</p>
+					<p>&nbsp;&nbsp;6) Number rounding</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can a preprocessor rule be modified?</a>
+				<div class="cd-faq-content">
+					<p>Yes, a preprocessor rule can be modified. The rule and or the current rule's parameter settings can be changed any time. Any future reference to this map would reflect the new rules automatically.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can a preprocessor rule be deleted?</a>
+				<div class="cd-faq-content">
+					<p>Yes, a preprocessor rule can be deleted any time. Any future reference to this map would reflect the updated ruleset automatically.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why do certain rules not require lookup attribute definition, while most rules do?</a>
+				<div class="cd-faq-content">
+					<p>Any rule intended to make changes (update) to the looked up attribute like case conversion, number rounding, conditional skip, deduplication and date range fix would require a valid definition for the lookup. Only exception is 'Skip N Rows' which simply skips the first N rows from processing without any concern over the data.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What kind of duplicate processing is supported?</a>
+				<div class="cd-faq-content">
+					<p>Based on the specified criteria, the identified duplicate rows can be: </p><br/>
+					<p>&nbsp;&nbsp;a) Removed from the result dataset</p>
+					<p>&nbsp;&nbsp;b) Obfuscated, meaning suffix the attribute with a running counter so that the resulting dataset of void of duplicates</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does skip rules do?</a>
+				<div class="cd-faq-content">
+					<p>Skip rules can skip rows based on a criteria or simply the first N rows.</p><br/>
+					<p>&nbsp;&nbsp;a) Skip first N rows - Will simply remove the first N rows of the sheet from the final dataset.</p>
+					<p>&nbsp;&nbsp;b) Skip a row depending on the empty or not empty condition</p>
+					<p>&nbsp;&nbsp;c) Skip a row depending on an equals or not equals condition</p>
+					<p>&nbsp;&nbsp;d) Skip a row depending on string starts or ends with condition</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How does the 'Date range fix' rule work?</a>
+				<div class="cd-faq-content">
+					<p>A source sheet may contain one or more date attributes. A date range for the current dataset on the specified attribute can be inferred based on the lower and upper date bounds. A date range fix rule expects a target from and to bounds for a date range. </p><br/>
+					<p>With this target date range, algorithmically extrapolate or interpolate a found date value on a given row; thus shifting the dates to a new range.</p><br/>
+					<p>This preprocessor is useful when you are trying to shift forward or backwards a set of records based on a date attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does 'Empty Value' rule do?</a>
+				<div class="cd-faq-content">
+					<p>This preprocessor simply empties the value of a given attribute on all rows of the source sheet</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does a case conversion preprocessor do?</a>
+				<div class="cd-faq-content">
+					<p>This preprocessor simply applies the case conversion rule (upper or lower) on the value of a given attribute on all rows of the source sheet when producing result</p>
+					</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What kind of number processing is supported?</a>
+				<div class="cd-faq-content">
+					<p>A source sheet may contain one or more number attributes. A number preprocessor simply helps you update the attribute value to a new number value with the result of a specified rounding (up or down) function.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the data types supported?</a>
+				<div class="cd-faq-content">
+					<p>The mapper app supports String, Date and Number data types. Any other datatype that is not supported should be mapped to a simple String type for convenience. For certain preprocessors, specification of right types is necessary. </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why should I specify type for an attribute?</a>
+				<div class="cd-faq-content">
+					<p>By default, all the attributes are treated as of string data type. However, if you are planning to apply type specific preprocessors or mapping rules, it is important to specify appropriate data type for an attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">When should is mark an attribute as 'Required'?</a>
+				<div class="cd-faq-content">
+					<p>If you intend to let the mapper validate the source data and check for empty value for an attribute, you should check the 'Required' setting for the attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I have more than one attribute marked as 'Required'?</a>
+				<div class="cd-faq-content">
+					<p>Sure, you can mark any attribute that needs the presence check as 'Required'</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">When should is mark an attribute as 'Unique'?</a>
+				<div class="cd-faq-content">
+					<p>If you intend to let the mapper validate the source data and run a unique check on the attribute values, you should check the 'Unique' setting for the attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I have more than one attribute marked as 'Unique'?</a>
+				<div class="cd-faq-content">
+					<p>Sure, you can mark any attribute that needs the uniqueness check as 'Unique'</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the significance of 'Validate' on the Source Validation Rules page?</a>
+				<div class="cd-faq-content">
+					<p>The rules configured on the source sheet may require certain dependencies based on the rules applied. For example, a date-oriented rule expects the source attribute to be of date type, number-processing rule would expect the type to be of number. Moreover, the preprocessor rules might also require data type checking. Hence, it is a good idea to run validation before moving to the next stage in the process.  </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the significance of 'Save' on the Source Validation Rules page?</a>
+				<div class="cd-faq-content">
+					<p>It is an opportunity to save the created metadata so as not to repeat the design process.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="stage2" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Design - Target Validation Rules (Stage III)</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">My target excel has multiple sheets</a>
+				<div class="cd-faq-content">
+					<p>Sure, all the sheets of the target excel will be presented for selection/processing on individual tabs. You just need to identify the sheets that need to be considered for the mapping mapping process. Any sheet that is not considered can be marked as ignored by checking the 'Ignore Sheet' flag on the top of the sheet.</p></br/>
+					<p>Sheets marked as ignored will not be presented on the mapping rules definition phase. It is just a convenience to keep the interaction focused.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What happens if I mark a sheet as 'Ignore'?</a>
+				<div class="cd-faq-content">
+					<p>The sheets that are marked as ignored will not be presented for mapping when you build mapping rules.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the data types supported?</a>
+				<div class="cd-faq-content">
+					<p>The mapper app supports String, Date and Number data types. Any other datatype that is not supported should be mapped to a simple String type for convenience. For certain preprocessors, specification of right types is necessary. </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why should I specify type for an attribute?</a>
+				<div class="cd-faq-content">
+					<p>By default, all the attributes are treated as of string data type. However, if you are planning to apply type specific preprocessors or mapping rules, it is important to specify appropriate data type for an attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">When should is mark an attribute as 'Required'?</a>
+				<div class="cd-faq-content">
+					<p>If you intend to let the mapper validate the mapped output data and check for empty value for an attribute, you should check the 'Required' setting for the attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I have more than one attribute marked as 'Required'?</a>
+				<div class="cd-faq-content">
+					<p>Sure, you can mark any attribute that needs the presence check as 'Required'</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">When should is mark an attribute as 'Unique'?</a>
+				<div class="cd-faq-content">
+					<p>If you intend to let the mapper validate the mapped output data and run a unique check on the attribute values, you should check the 'Unique' setting for the attribute.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I have more than one attribute marked as 'Unique'?</a>
+				<div class="cd-faq-content">
+					<p>Sure, you can mark any attribute that needs the uniqueness check as 'Unique'</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the significance of 'Validate' on the Target Validation Rules page?</a>
+				<div class="cd-faq-content">
+					<p>A general validation to ensure that the mapping configuration is valid till this stage of the map design phase.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the significance of 'Save' on the Target Validation Rules page?</a>
+				<div class="cd-faq-content">
+					<p>It is an opportunity to save the created metadata so as not to repeat the design process.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			
+		</ul> <!-- cd-faq-group -->
+
+	
+		<ul id="stage3" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Design - Mapping Rules (Stage IV)</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why I am seeing fewer sheets (tabs) on the mapping rules page?</a>
+				<div class="cd-faq-content">
+					<p></p></br/>
+					<p>Target Sheets marked as ignored will not be presented on the mapping rules definition.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What happens if I mark a sheet as 'Ignore'?</a>
+				<div class="cd-faq-content">
+					<p>In mapping stage, checking 'Ignore' flag would ignore all the mapping rules defined for that target sheet. The mapping rules defined will not be removed, rather just ignored during execution. This is just a convenience that would help testing of the mapping.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are preprocessors?</a>
+				<div class="cd-faq-content">
+					<p>A preprocessor is a set of rules to be applied on the input data to the mapping process. Preprocessors aid in skipping rows based on conditions or massage specific attributes on each row.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How many preprocessors can I define on a sheet?</a>
+				<div class="cd-faq-content">
+					<p>No restrictions; you can have as many rules as required to accomplish the goal. The rules will be evaluated sequentially in the order they are defined with output of a rule evaluation passed as input to the next rule processing. This can be viewed as a pipeline for rules execution until the last rule is evaluated, resulting in the final dataset that will be exposed as input to the mapping process.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the preprocessors available?</a>
+				<div class="cd-faq-content">
+					<p>Preprocessors on the mapping process can be categorized as follows:</p><br/>
+					<p>&nbsp;&nbsp;1) Skip rows</p>
+					<p>&nbsp;&nbsp;2) Empty value</p>
+					<p>&nbsp;&nbsp;3) Case conversion</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can a preprocessor rule be modified?</a>
+				<div class="cd-faq-content">
+					<p>Yes, a preprocessor rule can be modified. The rule and or the current rule's parameter settings can be changed any time. Any future reference to this map would reflect the new rules automatically.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can a preprocessor rule be deleted?</a>
+				<div class="cd-faq-content">
+					<p>Yes, a preprocessor rule can be deleted any time. Any future reference to this map would reflect the updated ruleset automatically.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does skip rules do?</a>
+				<div class="cd-faq-content">
+					<p>Skip rules can skip rows based on a specified criteria.</p><br/>
+					<p>&nbsp;&nbsp;a) Skip a row depending on the empty or not empty condition</p>
+					<p>&nbsp;&nbsp;b) Skip a row depending on an equals or not equals condition</p>
+					<p>&nbsp;&nbsp;c) Skip a row depending on string starts or ends with condition</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does 'Empty Value' rule do?</a>
+				<div class="cd-faq-content">
+					<p>This preprocessor simply empties the value of a given attribute on all rows of the input dataset</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does a case conversion preprocessor do?</a>
+				<div class="cd-faq-content">
+					<p>This preprocessor simply applies the case conversion rule (upper or lower) on the value of a given attribute on all rows of the input dataset</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the purpose of specifying a source sheet in the mapping rule configuration?</a>
+				<div class="cd-faq-content">
+					<p>Mapping rule configuration facilitates mapping configuration for each of the target sheets (that are not ignored). For each of the target sheet, you can specify the source sheet that serves as input. Note that the data passed would be validated and preprocessed dataset based on the source validation rules defined on the chosen sheet.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Would I be able to change the source sheet?</a>
+				<div class="cd-faq-content">
+					<p>Yes, you can. However, this would reset the configuration recorded for that sheet and will start afresh. Note that all the attribute mapping defined on this mapping would have access to attributes of the chosen source sheet.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I choose to focus on a subset of input data for mapping considerations?</a>
+				<div class="cd-faq-content">
+					<p>Yes, you can by choosing appropriate scope rule. However, this would reset the configuration recorded for that sheet and will start afresh.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are scope rules?</a>
+				<div class="cd-faq-content">
+					<p>Scope rules helps identify a subset of the input data for mapping process. </p>
+          <p>&nbsp;&nbsp;1) All Rows</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Consider processing all rows of the input dataset.</p>
+          <p>&nbsp;&nbsp;2) Distinct Rows</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Filter the input dataset for rows with distinct value for specified attribute. If multiple rows are found for a specified value, the first row would be considered for processing. </p>
+          <p>&nbsp;&nbsp;3) Distinct Composite Rows</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Filter the input dataset for rows based on distinct value derived from the composite columns (a value composed by a simple concatenation of attributes). If multiple rows are found for a specified value, the first row would be considered for processing. This is useful when trying to aggregate or derive statistical values from the dataset.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Would I be able to change the scope rule?</a>
+				<div class="cd-faq-content">
+					<p>Yes, you can. Be aware of the impact this scope change will have on mapping rules defined at attribute level within the map as they may be impacted; especially any mapping rule involving aggregation and custom rules.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I reset and start fresh on the scope rule configuration?</a>
+				<div class="cd-faq-content">
+					<p>Yes. Simply click on the trash icon next to the scope rule setting to reset to start fresh.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Is it necessary to map all attributes in a mapping?</a>
+				<div class="cd-faq-content">
+					<p>No. You can choose to ignore mapping for attributes that are not expected to be part of the output. In other words, any attribute that is not identified with a mapping rule will be ignored.</p>
+					</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the mapping options available for an attribute?</a>
+				<div class="cd-faq-content">
+					<p>Mapping rule identifies how the output value will be computed. Following types of mapping rules are supported</p><br/>
+          <p>&nbsp;&nbsp;1) Simple</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;A simple value-for-value mapping where a designated source attribute is mapped to a target attribute.</p>
+          <p>&nbsp;&nbsp;2) Conditional</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The output value is derived based on a conditional evaluation. </p>
+          <p>&nbsp;&nbsp;3) Switch</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The output value is derived based on the matching condition on a switch construct.</p>
+          <p>&nbsp;&nbsp;4) Computed</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The output value is computed based on a outcome of executing a set of operations on source attributes.</p>
+          <p>&nbsp;&nbsp;5) Aggregated</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The output value is derived based on the defined aggregation operation.</p>
+          <p>&nbsp;&nbsp;6) Custom</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;A pure custom logic represented as a block of code that will be executed at runtime.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Tell me about attribute mapping type 'Simple Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Simple Mapping rule facilitates assignment of either a static value or a looked up value from the source sheet to a target attribute.</p><br/>
+					<p>Few pointers on Simple Mapping:</p><br/>          
+          <p>&nbsp;&nbsp;Static value is a simple string literal</p>
+          <p>&nbsp;&nbsp;A Lookup value is a value picked from the dataset for the specified source sheet and attribute.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Only attributes from the source sheet specified in the mapping configuration will be exposed.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Keep in mind the data types of the source and target attributes should match, otherwise will result in error.</p>
+          <p>&nbsp;&nbsp;You can switch from static to lookup mode as desired any time.</p>
+          <p>&nbsp;&nbsp;You can edit (change) the mapping mode as desired any time.</p>
+          <p>&nbsp;&nbsp;Only one assignment rule can be specified for Simple Mapping.</p>
+          <p>&nbsp;&nbsp;If Finally post-processor is specified, the mapped value would be processed with the custom logic before assigning to the target attribute. </p>
+        </div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Tell me about attribute mapping type 'Conditional Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Conditional Mapping rule facilitates conditional assignment to a target attribute.</p><br/>
+          <p>A Conditional Mapping is made up of:</p><br/>
+          <p>&nbsp;&nbsp;One or more logical conditions defined on the source attributes (any valid attribute on the source sheet).</p>
+          <p>&nbsp;&nbsp;A TRUE and FALSE setting invoked based on the outcome of the condition(s) evaluation and assigns a value to the target attribute.</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Static Value - A static literal</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Lookup Value - A looked up value from the source sheet</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Empty Value - A empty value (forcefully set to empty value)</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Skip Row - Skip the row from the mapping process (use with caution)</p><br/>
+					<p>Few pointers on Conditional Mapping:</p><br/>          
+          <p>&nbsp;&nbsp;Static value is a simple string literal</p>
+          <p>&nbsp;&nbsp;A Lookup value is a value picked from the dataset for the specified source sheet and attribute.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Only attributes from the source sheet specified in the mapping configuration will be exposed.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Keep in mind the data types of the source and target attributes should match, otherwise will result in error.</p>
+          <p>&nbsp;&nbsp;You can switch between assignment modes for the TRUE and FALSE conditions as desired any time.</p>
+          <p>&nbsp;&nbsp;You can edit (change) the conditions set as desired any time.</p>
+          <p>&nbsp;&nbsp;You can have multiple conditions specified and they will be evaluated as logical unit with a logical operator that combines the result (AND or OR) to arrive at the final evaluated result</p>
+        </div> <!-- cd-faq-content -->
+			</li>      
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the condition types supported in 'Conditional Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Conditional Mapping could employ one or more conditions each evaluating a logical condition. Following is the list of operations supported to build a condition: </p><br/>
+					<p>&nbsp;&nbsp;a) Empty Condition - Check if the input value is empty or not</p>
+					<p>&nbsp;&nbsp;b) Equals Condition - Check if the input value is equals or not equals to a specified value (static or looked up value)</p>
+					<p>&nbsp;&nbsp;c) Arithmetic Condition - Compare the input value with the specified value (static or looked up value) using arithmetic operations like <, <=, > or >= </p>
+					<p>&nbsp;&nbsp;d) String Operations - Check if the input value contains the specified value (static or looked up value), equivalent to substring operation  </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the available modes of combining conditions in 'Conditional Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>Conditions are sequentially executed and logically evaluated based on the logical operator - AND and OR</p><br/>
+					<p>NOTE: The last condition in the sequence must not be configured with any logical operator</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Tell me about attribute mapping type 'Switch Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Switch Mapping rule facilitates conditional assignment to a target attribute based on the input vale.</p><br/>
+          <p>A Switch Mapping is made up of:</p><br/>
+          <p>&nbsp;&nbsp;One or more conditions that will be sequentially evaluated </p>
+          <p>&nbsp;&nbsp;Upon hitting a condition that evaluates to TRUE, the output attribute will be and assigns a value to the target attribute. </p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Static Value - A static literal</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Lookup Value - A looked up value from the source sheet</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Empty Value - A empty value (forcefully set to empty value)</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Skip Row - Skip the row from the mapping process (use with caution)</p><br/>
+					<p>Few pointers on Switch Mapping:</p><br/>          
+          <p>&nbsp;&nbsp;Static value is a simple string literal</p>
+          <p>&nbsp;&nbsp;A Lookup value is a value picked from the dataset for the specified source sheet and attribute.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Only attributes from the source sheet specified in the mapping configuration will be exposed.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Keep in mind the data types of the source and target attributes should match, otherwise will result in error.</p>
+          <p>&nbsp;&nbsp;You can switch between assignment modes for the switch conditions as desired any time.</p>
+          <p>&nbsp;&nbsp;You can edit (change) the conditions set as desired any time.</p>
+          <p>&nbsp;&nbsp;The first condition in the sequence of conditions specified that evaluates to TRUE, will be executed for assigning a value to target attribute </p>
+        </div> <!-- cd-faq-content -->
+			</li>            
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the condition types supported in 'Switch Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Switch Mapping could employ one or more conditions each evaluating a logical condition. Following is the list of operations supported to build a condition: </p><br/>
+					<p>&nbsp;&nbsp;a) Empty Condition - Check if the input value is empty or not</p>
+					<p>&nbsp;&nbsp;b) Equals Condition - Check if the input value is equals or not equals to a specified value (static or looked up value)</p>
+					<p>&nbsp;&nbsp;c) Arithmetic Condition - Compare the input value with the specified value (static or looked up value) using arithmetic operations like <, <=, > or >= </p>
+					<p>&nbsp;&nbsp;d) String Operations - Check if the input value contains the specified value (static or looked up value), equivalent to substring operation  </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Tell me about attribute mapping type 'Computed Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Computed Mapping rule facilitates assignment of a computed value from one or more source attributes to a target attribute</p><br/>
+          <p>A Computed Mapping is made up of:</p><br/>
+          <p>&nbsp;&nbsp;One or more conditions defined on the source attributes (any valid attribute on the source sheet).</p>
+          <p>&nbsp;&nbsp;Conditions will be evaluated sequentially and output of a condition will be passed as input to the next condition </p>
+          <p>&nbsp;&nbsp;Final resulting value from the last condition will be and assigns a value to the target attribute. </p><br/>
+          <p>&nbsp;&nbsp;A Condition can have input value as:</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Static Value - A static literal</p>
+          <p>&nbsp;&nbsp&nbsp;&nbsp;Lookup Value - A looked up value from the source sheet</p><br/>
+					<p>Few pointers on Computed Mapping:</p><br/>          
+          <p>&nbsp;&nbsp;Static input value for a condition is a simple string literal</p>
+          <p>&nbsp;&nbsp;A Lookup input value for a condition is a value picked from the dataset for the specified source sheet and attribute.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Only attributes from the source sheet specified in the mapping configuration will be exposed.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Keep in mind the data types of the source and target attributes should match, otherwise will result in error.</p>
+          <p>&nbsp;&nbsp;You can switch between assignment modes for the switch conditions as desired any time.</p>
+          <p>&nbsp;&nbsp;You can edit (change) the conditions set as desired any time.</p>
+          <p>&nbsp;&nbsp;You can have multiple conditions specified and they will be evaluated in sequence with an operator that combines the results to arrive at the final evaluated result</p>
+        </div> <!-- cd-faq-content -->
+			</li>            
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the operator types supported in 'Computed Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Computed Mapping could employ one or more conditions each executing an operation. Following is the list of operations supported to build a condition: </p><br/>
+					<p>&nbsp;&nbsp;a) String Operations - Case conversion, Concatenation and Substring</p>
+					<p>&nbsp;&nbsp;b) Arithmetic Operations - Add, Subtract, Multiply and Divide</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the operator types supported in Computed Mapping while combining multiple conditions?</a>
+				<div class="cd-faq-content">
+					<p>A Computed Mapping could employ one or more conditions each executing an operation. The final result is arrived by combining the results of each operation in sequence. Following is the list of operations supported while combining conditions condition: </p><br/>
+					<p>&nbsp;&nbsp;a) String Operations - Concatenation</p>
+					<p>&nbsp;&nbsp;b) Arithmetic Operations - Add, Subtract, Multiply and Divide</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Tell me about attribute mapping type 'Aggregated Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>An Aggregated Mapping rule facilitates assignment of a computed statistical value from one or more source attributes to a target attribute</p><br/>
+          <p>An Aggregated Mapping is made up of:</p><br/>
+          <p>&nbsp;&nbsp;One or more conditions defined on the source attributes (any valid attribute on the source sheet).</p>
+          <p>&nbsp;&nbsp;Aggregate conditions will be evaluated sequentially and output of a condition will be passed as input to the next condition </p>
+          <p>&nbsp;&nbsp;Final resulting value from the last condition will be and assigns a value to the target attribute. </p><br/>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;A Condition can have input value as a looked up value from the source sheet</p><br/>
+					<p>Few pointers on Aggregated Mapping:</p><br/>          
+          <p>&nbsp;&nbsp;A Lookup input value for a condition is a value picked from the dataset for the specified source sheet and attribute.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Only attributes from the source sheet specified in the mapping configuration will be exposed.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Keep in mind the data types of the source and target attributes should match, otherwise will result in error.</p>
+          <p>&nbsp;&nbsp;You can edit (change) the conditions set as desired any time.</p>
+          <p>&nbsp;&nbsp;You can have multiple conditions specified and they will be evaluated in sequence with an operator that combines the results to arrive at the final evaluated result</p>
+        </div> <!-- cd-faq-content -->
+			</li>            
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the operator types supported in 'Aggregated Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>An Aggregated Mapping could employ one or more conditions each executing an operation. Following is the list of operations supported to build a condition: </p><br/>
+					<p>&nbsp;&nbsp;a) Aggregate Operations - Sum, Average, Min and Max</p>
+					<p>&nbsp;&nbsp;b) Statistical Operations - Mean, Median, Variance, Standard Deviation and Percentile</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the operator types supported in Computed Mapping while combining multiple conditions?</a>
+				<div class="cd-faq-content">
+					<p>A Computed Mapping could employ one or more conditions each executing an operation. The final result is arrived by combining the results of each operation in sequence. Following is the list of operations supported while combining conditions condition: </p><br/>
+					<p>&nbsp;&nbsp;Arithmetic Operations - Add, Subtract, Multiply and Divide</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Tell me about attribute mapping type 'Custom Mapping'?</a>
+				<div class="cd-faq-content">
+					<p>A Custom Mapping rule facilitates execution of a block of code and assign the result to the target attribute</p><br/>
+          <p>NOTE: Please refer to the restrictions and conventions to be followed while writing custom logic as code for use in 'Finally' and 'Custom' mapping option.</p>
+        </div> <!-- cd-faq-content -->
+			</li>          
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the purpose of 'Finally' in the attribute mapping?</a>
+				<div class="cd-faq-content">
+					<p>Finally option allows you to specify a custom code to be run as a post-processor on the mapped output before assigning to the target attribute. This is optional, if not present the mapped output will be assigned directly to the target attribute.</p><br/>
+          <p>Conventions to be followed:</p>
+          <p>&nbsp;&nbsp;a) Input Data</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Source data is accessible via a simple array notation like:</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSource['SHEET_NAME']['ROW_NUMBER']['ATTRIBUTE_COLUMN_KEY_IN_EXCEL'] - </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Will get you access to input dataset as returned by the source validation phase. </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A cell value on the source dataset can be fetched by passing appropriate values for SHEET_NAME, ROW_NUMBER and ATTRIBUTE_COLUMN_KEY_IN_EXCEL</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_data['SHEET_NAME']['ROW_NUMBER']['ATTRIBUTE_COLUMN_KEY_IN_EXCEL'] - </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Will get you access to raw source data (before source validation).</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A cell value on the source dataset can be fetched by passing appropriate values for SHEET_NAME, ROW_NUMBER and ATTRIBUTE_COLUMN_KEY_IN_EXCEL</p>
+          <p>&nbsp;&nbsp;b) Custom code</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;You are free to write custom logic in Javascript in the block and return a computed value
+          </p>
+          <p>&nbsp;&nbsp;c) Return value</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The return value of the block of code is expected to be primitive value - not a collection or object. The returned value will be assigned to the target attribute.</p>
+        </div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the significance of 'Validate' on the Mapping Rules page?</a>
+				<div class="cd-faq-content">
+					<p>A final validation of all mapping rules and configuration.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the significance of 'Save' on the Mapping Rules page?</a>
+				<div class="cd-faq-content">
+					<p>Finalize and save the map.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			
+		</ul> <!-- cd-faq-group -->
+
+			
+		<ul id="repository" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Repository</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are private and shared maps?</a>
+				<div class="cd-faq-content">
+					<p>Maps created by you by default are private. You can choose to share them with others for reference purposes.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I make changes to an existing map?</a>
+				<div class="cd-faq-content">
+					<p>Yes, you can reopen (edit) an existing map and make changes.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do share a map with others?</a>
+				<div class="cd-faq-content">
+					<p>Either you can mark the map as shared or export and share the map archive offline.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I create a copy of a map?</a>
+				<div class="cd-faq-content">
+					<p>Simply clone a map from your own or shared repoisory or import a map archive (downloaded via export)</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What can I do with a shared map?</a>
+				<div class="cd-faq-content">
+					<p>You would be able to clone a copy of the map into your repository or download as a archive file for sharing. You cannot edit a shared map, only the owner can make changes.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">I no longer need a map, can I delete it?</a>
+				<div class="cd-faq-content">
+					<p>Yes. Please note that a delete operation would delete the map as well as any existing jobs that are utilizing the map. Use with caution!</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does an downloaded map archive contain?</a>
+				<div class="cd-faq-content">
+					<p>A download action exports the map configuration as an archive file that can be saved to your local file system. The archive file contains: </p><br/>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;1) A map configuration file in JSON format containing meta data that represents the map configuration and rules</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;2) An excel file that was used as the source template in the map design process</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;3) An excel file that was used as the target template in the map design process </p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I import a map archive file?</a>
+				<div class="cd-faq-content">
+					<p>Use the Import function in the repository under private maps</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="jobs" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Jobs</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is a job?</a>
+				<div class="cd-faq-content">
+					<p>A Job is an execution unit that applied a mapper to produce mapped output after applying specified mapping rules and transformations</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I run a job?</a>
+				<div class="cd-faq-content">
+					<p>A Job can be triggered for execution by clicking on the play icon on the job row. A job can be run any numbe of times, each run will pick up the current map configuration that exists on the repository.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I find whether a job ran successfully or not?</a>
+				<div class="cd-faq-content">
+					<p>Each job row (record) will indicate a status representing:</p><br/>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;a) RUNNING - Indicating the job is currently running</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;b) SUCCESS - Job completed successfully</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;c) FAILED - Job execution failed</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I find the job execution details?</a>
+				<div class="cd-faq-content">
+					<p>Every job execution captures the results in a log file. The log file can be viewed for details.</p> 
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What does an downloaded job archive contain?</a>
+				<div class="cd-faq-content">
+					<p>A download action exports the job configuration as an archive file that can be saved to your local file system. The archive file contains: </p><br/>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;1) A job configuration file in JSON format containing meta data that represents the job configuration</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;2) An excel file that was used as the input for the job execution</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;3) An excel file that was produced as a result of execution</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;4) A log file with informational and error log entries captured during execution </p>
+				</div> <!-- cd-faq-content -->
+			</li>		
+			<li>
+				<a class="cd-faq-trigger" href="#0">I no longer need a job, can I delete it?</a>
+				<div class="cd-faq-content">
+					<p>Yes. All the artifacts related to the job will be deleted.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+    </ul> <!-- cd-faq-group -->
+
+	</div> <!-- cd-faq-items -->
+	<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- cd-faq -->
+<script src="/faq/js/jquery-2.1.1.js"></script>
+<script src="/faq/js/jquery.mobile.custom.min.js"></script>
+<script src="/faq/js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
