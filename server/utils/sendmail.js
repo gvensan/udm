@@ -7,15 +7,15 @@ let transporter = nodemailer.createTransport({
 	port: 465,
 	secure: true, // secure:true for port 465, secure:false for port 587
 	auth: {
-			user: 'udatamapper@gmail.com',
-			pass: 'Test@123'
+			user: 'xxxx@gmail.com',
+			pass: 'xxx@yyy'
 	}
 });
 
 function send(to, subject, text, isHtml) {
 	// setup email data with unicode symbols
 	let mailOptions = {
-		from: '"Universal Data Mapper" <udatamapper@gmail.com>', // sender address
+		from: '"Universal Data Mapper" <xxxx@gmail.com>', // sender address
 		to: to,
 		subject: subject,
 		text: (!isHtml ? text : ''),
