@@ -170,7 +170,7 @@ router.get('/activitylog', function(req, res, next) {
 
 router.post('/toggleadmin', function(req, res, next) {
   var user = getUserByToken(req.headers['x-info-token']);
-  if (!user || (!user.admin && user.email !== 'giri@numberz.in'))
+  if (!user || (!user.admin && user.email !== 'xxx@yyy'))
     return res.json({success: false, message: 'Unauthorized request'});
 
   var _user = getUserByEmail(req.body.email);
