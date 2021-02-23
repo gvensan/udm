@@ -28,7 +28,7 @@ class SideNav extends React.Component {
         <NavItem push={push} currentPath={pathname} urlPath={'/job'} path={'upload'} label={'Upload'} />
         <NavItem push={push} currentPath={pathname} urlPath={'/jobs'} path={'jobs'} label={'Jobs'} />
         {this.props.user && Object.keys(this.props.user).length && 
-          (this.props.user.admin || this.props.user.email.endsWith('giri@numberz.in')) &&
+          (this.props.user.admin || this.props.user.email.endsWith('xxxx@yyyy')) &&
           <NavItem push={push} currentPath={pathname} urlPath={'/users'} path={'users'} 
                   noMargin={false} label={<span>Mapper<br/>Users</span>} />}
       </div>
